@@ -20,22 +20,22 @@ body{
   height: 100%;
   padding: 40px 10px 30px 10px;
   border-right: 1px solid #2f3336;
-  transition: all 0.35s;
+  transition: all 0.9s;
 }
 .sidebar-header{
   width:100%;
   margin-bottom: 16px;
 }
 .logo-img{
-  width: 38px;
-  min-height: 38px;
+  width: 42px;
+  min-height: 42px;
   border-radius: 50%;
   object-fit: cover;
   transition: transform 0.3s;
   margin-left: 10px;
 }
 .logo-img:hover{
-  transform: scale(1.5);
+  transform: scale(1.8);
 }
 .sidebar button{
   height: 60px;
