@@ -78,12 +78,39 @@ sidebar > nav{
   margin-right: 6px;
   overflow: hidden;
 }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+  text-align: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+
 .flex-container{
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   background-color: blue;
   margin-left: 10px;
+  margin-top: 30px;
 }
 .flex-container > div{
   width: 150px;
@@ -94,7 +121,7 @@ sidebar > nav{
   transition: transform 0.3s;
   background-color: white;
   border-radius: 10px;
-  
+
 }
 .flex-container > div:hover{
   transform: scale(1.2);
