@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Login</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="left-container">
+      <h1>Faça o login<br>E fique no estilo! </h1>
+      <img src="coolness-animate.svg" class="left-login-image" alt="animação">
+    </div>
+    <div class="right-container">
+      <div class="card-login">
+        <h1>LOGIN</h1>
+        <div class="textfield">
+          <label for="usuario">Usuário</label>
+          <input type="text" name="usuario" placeholder="Usuário">
+        </div>
+        <div class="textfield">
+          <label for="senha">Senha</label>
+          <input type="password" name="senha" placeholder="Senha">
+        </div>
+        <button class="btn-login">Login</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
