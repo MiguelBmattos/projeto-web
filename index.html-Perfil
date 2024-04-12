@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Perfil</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1>Gota</h1>
+  <img class="foto" src="https://blog.cobasi.com.br/wp-content/uploads/2020/06/cuidar-de-gato-capa.png" alt="foto do usuário">
+  <div class="informações">
+    <h2>Informações</h2>
+    <p>Nome do usuário:</p>
+    <p>E-mail:</p>
+    <p>Endereços:</p>
+    <p>cartões salvos:</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
