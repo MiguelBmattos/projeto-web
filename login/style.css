@@ -3,6 +3,7 @@
 body {
   margin: 0;
   font-family: 'Noto Sans', sans-serif;
+  max-height: 100vh;
 }
 body *{
   box-sizing: border-box;
@@ -18,18 +19,21 @@ body *{
 }
 .left-container{
   width: 50vw;
-  height: 100vh;
+  height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin: 20px;
+  
 }
 .left-container > h1{
   font-size: 3vw;
   color: #77ffc0;
 }
 .left-login-image{
-  width: 35vw;
+  height: 70vh;
+  width: 50vw;
 }
 .right-container{
   width: 50vw;
@@ -96,6 +100,14 @@ body *{
   cursor: pointer;
   box-shadow: 0px 10px 40px -12px #00ff8052;
 }
+a:link{
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover{
+  background-color: transparent;
+  text-decoration: underline;
+}
 @media only screen and (max-width: 950px){
   .card-login{
     width: 85%;
@@ -107,20 +119,21 @@ body *{
   }
   .left-container > h1{
     display: none;
-    
+
   }
-  left-container{
+  .left-container{
     width: 100%;
     height: auto;
   }
-  right-container{
+  .right-container{
   width: 100%;
   height: auto;
 }
   .left-login-image{
-    
+
     width: 50vw;
   }
   .card-login{
     width: 90vw;
   }
+}
