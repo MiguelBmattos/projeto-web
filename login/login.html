@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width">
   <title>Login</title>
   <link href="login.css" rel="stylesheet" type="text/css" />
-
+  
 </head>
 
 <body>
@@ -26,19 +26,19 @@
         </div>
         
         <div class="textfield">
-          <label for="senha">Senha</label>
+          <label for="password">Senha</label>
           <input type="password" id="password" name="password" placeholder="Senha" onchange="onChangePassword()">
           <div class="error" id="password-required-error">Senha é obrigatória</div>
         </div>
 
-        <button class="btn-login" id="entar" type="button" disabled="true" onclick="login()">Login</button>
+        <button class="btn-login" id="login" type="button" disabled="true" onclick="login()">Login</button>
 
-        <a onclick="register()">Cadastre-se</a>
+        <button class="btn-login" id="register" onclick="register()">Cadastre-se</button>
       </form>
 
     </div>
   </div>
-  <script src="login.js"></script>
+  <script  src="script.js"></script>
 </body>
 
 </html>
