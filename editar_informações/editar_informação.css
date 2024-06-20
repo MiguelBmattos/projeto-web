@@ -8,7 +8,7 @@ body *{
   box-sizing: border-box;
 }
 .main-container{
-  
+
   overflow: hidden;
   width: 100vw;
   height: 90%;
@@ -17,7 +17,7 @@ body *{
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
- 
+
 }
 .card{
   margin-top: 20px;
@@ -82,20 +82,31 @@ body *{
   cursor: pointer;
   box-shadow: 0px 10px 40px -12px #00ff8052;
 }
+.error{
+  color: red;
+  display: none;
+  background-color: transparent;
+}
+.btn-confirmar:active{
+  opacity:0.8;
+}
+.btn-confirmar[disabled]{
+  opacity: 0.7;
+}
 @media only screen and (max-width: 950px){
   .card{
     width: 50%;
   }
 }
 @media only screen and (max-width: 600px){
-  
+
   .card > h1{
     display: none;
 
   }
- 
- 
-  
+
+
+
   .card{
     height: auto;
     width: 70vw;
