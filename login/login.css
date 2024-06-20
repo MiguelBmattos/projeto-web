@@ -131,21 +131,22 @@ a:hover{
   }
   .left-container > h1{
     display: none;
-
   }
   .left-container{
     width: 100%;
     height: auto;
   }
   .right-container{
-  width: 100%;
-  height: auto;
-}
+    width: 100%;
+    height: auto;
+  }
   .left-login-image{
-
     width: 50vw;
   }
   .card-login{
     width: 90vw;
   }
+}
+.title_lnk {
+  cursor: pointer;
 }
