@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Login</title>
+  <title>Loja - Login</title>
   <link href="login.css" rel="stylesheet" type="text/css" />
   
 </head>
@@ -12,7 +12,8 @@
 <body>
   <div class="main-container">
     <div class="left-container">
-      <h1>Faça o login<br>E fique no estilo! </h1>
+      <h1 id="title" class="title_lnk">Loja Gota</h1>
+      <h1>Faça o login<br>E fique no estilo!</h1>
       <img src="snowfalling-animate.svg" class="left-login-image" alt="animação">
     </div>
     <div class="right-container">
@@ -31,14 +32,15 @@
           <div class="error" id="password-required-error">Senha é obrigatória</div>
         </div>
 
-        <button class="btn-login" id="login" type="button" disabled="true" onclick="login()">Login</button>
+        <button type="submit" class="btn-login" id="login" type="button" disabled="true">Login</button>
 
-        <button class="btn-login" id="register" onclick="register()">Cadastre-se</button>
+        <button class="btn-login" id="register">Cadastre-se</button>
       </form>
 
     </div>
   </div>
-  <script  src="script.js"></script>
+
+  <script type="module" src="login.js"></script>
 </body>
 
 </html>
