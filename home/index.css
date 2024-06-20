@@ -65,7 +65,7 @@ body{
   background-color: rgba(255, 255, 255, 0.08);
 }
 .sidebar button i {
-  position: realtive;
+  position: relative;
   font-size: 28px;
 }
 sidebar button span{
@@ -111,7 +111,9 @@ li a:hover {
   background-color: #02b05e;
 }
 
-
+li a.tab-on {
+  color: black;
+}
 .flex-container{
   display: flex;
   flex-wrap: wrap;
@@ -119,6 +121,9 @@ li a:hover {
   
   margin-left: 10px;
   margin-top: 30px;
+
+  background-image: element(home-btn);
+  background-repeat: repeat;
 }
 .flex-container > div{
   cursor: pointer;
@@ -178,4 +183,8 @@ footer{
     transition: margin 0.4s;
     margin-left: 78px;
   }
+}
+#username {
+  text-align: right;
+  font-size: small;
 }
