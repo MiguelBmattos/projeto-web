@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Loja - Editar</title>
+  <link href="editar_informacao.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="main-container">
+    <form class="card" id="form">
+      <h1>Digite as suas informações</h1>
+      <div class="textfield">
+        <label for="fullname">Nome completo</label>
+        <input type="text" name="fullname" placeholder="Nome completo" id="fullname" onchange="onChangeName()">
+        <div class="error" id="fullname-required-error">Nome obrigatório</div>
+        <div class="error" id="fullname-invalid-error">Nome inválido</div>
+      </div>
+      
+      <div class="textfield">
+        <label for="username">Nome de usuário</label>
+        <input type="text" name="username" placeholder="Nome de usuário" id="username" onchange="onChangeUserName()">
+        <div class="error" id="username-required-error">Nome de usuário obrigatório</div>
+      </div>
+      
+    
+      <div class="textfield">
+        <label for="email">E-mail</label>
+        <input type="email" name="email" placeholder="E-mail" id="email" onchange="onChangeEmail()">
+        <div class="error" id="email-required-error">E-mail obrigatório</div>
+        <div class="error" id="email-invalid-error">E-mail inválido</div>
+      </div>
+      
+      <div class="textfield">
+        <label for="adress">Endereço</label>
+        <input type="text" name="adress" placeholder="Endereço" id="adress" onchange="onChangeAdress()">
+        <div class="error" id="adress-required-error">Endereço obrigatório</div>
+        <div class="error" id="adress-invalid-error">Endereço inválido</div>
+      </div>
+      
+      <div class="textfield">
+        <label for="number">Nº</label>
+        <input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..?)\../g, '$1');"
+          name="number" placeholder="Nº" id="number" onchange="onChangeNumber()">
+        <div class="error" id="number-required-error">Número obrigatório</div>
+      </div>
+         
+      <div class="textfield">
+        <label for="comp">Complemento</label>
+        <input type="text" name="comp" placeholder="Complemento" id="comp" onchange="onChangeComp()">
+        <div class="error" id="comp-required-error">Complemento obrigatório</div>
+      </div>
+    
+      <button class="btn-confirmar" type="submit" disabled="true" id="confirmar">Confirmar</button>
+    </form>
+  </div>
+  <script type="module" src="editar_informacao.js"></script>
+</body>
+
+</html>

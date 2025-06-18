@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Loja - Login</title>
+  <link href="login.css" rel="stylesheet" type="text/css" />
+  
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="left-container">
+      <h1 id="title" class="title_lnk">Nome da Loja</h1>
+      <h1>Faça o login<br>E fique no estilo!</h1>
+      <img src="snowfalling-animate.svg" class="left-login-image" alt="animação">
+    </div>
+    <div class="right-container">
+      <form class="card-login">
+        <h1>LOGIN</h1>
+        <div class="textfield">
+          <label for="email">E-mail</label>
+          <input type="text" name="email" id="email" onchange="onChangeEmail()" placeholder="E-mail">
+          <div class="error" id="email-required-error">E-mail é obrigatório</div>
+          <div class="error" id="email-invalid-error">E-mail é inválido</div>
+        </div>
+        
+        <div class="textfield">
+          <label for="password">Senha</label>
+          <input type="password" id="password" name="password" placeholder="Senha" onchange="onChangePassword()">
+          <div class="error" id="password-required-error">Senha é obrigatória</div>
+        </div>
+
+        <button type="submit" class="btn-login" id="login" type="button" disabled="true">Login</button>
+
+        <button class="btn-login" id="register">Cadastre-se</button>
+      </form>
+
+    </div>
+  </div>
+
+  <script type="module" src="login.js"></script>
+</body>
+
+</html>

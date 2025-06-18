@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Loja</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link href="index.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <aside class="sidebar">
+    <header class="sidebar-header">
+      <img class="logo-img" src="https://blog.cobasi.com.br/wp-content/uploads/2020/06/cuidar-de-gato-capa.png" alt="foto do usuário">
+    </header>
+    <nav>
+      <button id="home-btn" title="Home">
+        <span>
+          <i class="material-symbols-outlined"> home </i>
+          <span>Home</span>
+        </span>
+      </button>
+      <button id="carrinho-btn" title="Carrinho">
+        <span>
+          <i class="material-symbols-outlined"> shopping_cart_checkout </i>
+          <span>Carrinho</span>
+        </span>
+      </button>
+      <button id="pedidos-btn" title="Meus pedidos">
+        <span>
+          <i class="material-symbols-outlined"> shopping_bag </i>
+          <span>Meus pedidos</span>
+        </span>
+      </button>
+      <button id="perfil-btn" title="Perfil">
+        <span>
+          <i class="material-symbols-outlined"> person </i>
+          <span id="perfil-span">...</span>
+        </span>
+      </button>
+      <button id="logout-btn" title="Sair">
+        <span>
+          <i class="material-symbols-outlined">logout</i>
+          <span id="logout-span">...</span>
+        </span>
+      </button>
+    </nav>
+  </aside>
+  <main class="main">
+    <div class="topnav">
+      <h1 class="title">Nome da Loja</h1>
+      <p id="username">&nbsp;</p>
+      <ul>
+        <li id="prod-tab-modelo"><a class="prod-tab" herf="#">Grupo indefinido</a></li>
+      </ul>
+    </div>
+    <div class="flex-container">
+
+      <div id="prod-card-modelo" class="produto" data-codigo="1" data-nome="2" data-valor="3" >
+        <img class="obj-img" src="" alt="foto do produto">
+        <p class="name-product">Modelo</p>
+        <p class="price">R$ <span class="prod-valor">0</span>,00</p>
+      </div>
+
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+    </div>
+    <footer>&copy;Copyright2024 Miguel Boschini Mattos</footer>
+  </main>
+  <script type="module" src="index.js"></script>
+</body>
+</html>
